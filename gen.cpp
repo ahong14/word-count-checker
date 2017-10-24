@@ -12,10 +12,7 @@
 #include<iomanip>
 #include<cctype>
 #include "BinarySearchTree.h"
-//#include "BTree.h"
-//#include "SeparateChaining.h"
-//#include "QuadraticProbing.h"
-//#include "QuadraticProbingPtr.h"
+
 
 using namespace std;
 
@@ -26,7 +23,7 @@ int main(int argc, char *argv[]) {
 	//command line prompt
 	inf.open(argv[1]);
 
-//	inf.open("getty.txt");
+
 
 	if (inf.fail()) {
 		cout << "file failed to open" << endl;
@@ -39,7 +36,9 @@ int main(int argc, char *argv[]) {
 	int line_number = 1;
 
 	BinarySearchTree<char*> bst(NULL);
-
+	
+	//read in words from file
+	//for each word, parse and insert into BST
 	while (!inf.eof()) {
 		if (temp == '\n') {
 			line_number++;
@@ -56,9 +55,7 @@ int main(int argc, char *argv[]) {
 
 			}
 
-//			if (temp == '\n') {
-//				line_number++;
-//			}
+
 
 			word[length] = '\0';
 
@@ -71,22 +68,11 @@ int main(int argc, char *argv[]) {
 		}
 
 	}
-
+	
+	//print results of tree
 	bst.printTree();
 
-//single word
-//	inf.get(temp);
-//	while (isalpha(temp)) {
-//		if(isupper(temp))
-//		{
-//			temp=temp+32;
-//		}
-//		word[length++] = temp;
-//		inf.get(temp);
-//
-//	}
-//	//length--;
-//	word[length] = '\0';
+
 
 	return 0;
 }
