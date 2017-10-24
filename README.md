@@ -2,7 +2,7 @@
 ECS 60 Data Structures and Algorithms Course Project
 Worked with a partner to implement the project. 
 
-Executing the Makefile creates an executable gen.out 
+
 Execute gen.out with a text file as a command line input.
 Output of the program lists all words within the file, number
 of occurrences, and line number appearance. 
