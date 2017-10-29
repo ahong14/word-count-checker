@@ -2,7 +2,7 @@
         #define _BINARY_SEARCH_TREE_H_
 
         #include "dsexceptions.h"
-		#include "QueueLL.h"
+	#include "QueueLL.h"
 
           // Binary node and forward declaration because g++ does
           // not understand nested classes.
