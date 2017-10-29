@@ -135,6 +135,8 @@ const Comparable & BinarySearchTree<Comparable>::elementAt(
  * t is the node that roots the tree.
  * Set the new root.
  */
+
+//MODIFIED INSERTION
 template<class Comparable>
 void BinarySearchTree<Comparable>::insert(const Comparable & x,
 		BinaryNode<Comparable> * & t, int l) const {
