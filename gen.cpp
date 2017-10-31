@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 		if (temp == '\n') {
 			line_number++;
 		}
-		inf.get(temp);
+		inf.get(temp); 
 
 		if (isalpha(temp)) {
 			while (isalpha(temp)) {
