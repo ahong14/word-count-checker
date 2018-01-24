@@ -16,8 +16,6 @@ int main(int argc, char *argv[]) {
 	//command line prompt
 	inf.open(argv[1]);
 
-
-
 	if (inf.fail()) {
 		cout << "file failed to open" << endl;
 	}
@@ -47,19 +45,12 @@ int main(int argc, char *argv[]) {
 				inf.get(temp);
 
 			}
-
-
-
 			word[length] = '\0';
-
 			length = 0;
-
 			char* test = new char[30];
 			strcpy(test, word);
-
 			bst.insert(test, line_number);
 		}
-
 	}
 	
 	//print results of tree
